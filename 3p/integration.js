@@ -39,6 +39,7 @@ import {manageWin} from './environment';
 import {mediaimpact} from '../ads/mediaimpact';
 import {nonSensitiveDataPostMessage, listenParent} from './messaging';
 import {twitter} from './twitter';
+import {nativo} from '../ads/nativo';
 import {yieldmo} from '../ads/yieldmo';
 import {computeInMasterFrame, register, run} from '../src/3p';
 import {parseUrl, getSourceUrl} from '../src/url';
@@ -68,6 +69,7 @@ register('doubleclick', doubleclick);
 register('flite', flite);
 register('taboola', taboola);
 register('dotandads', dotandads);
+register('nativo', nativo);
 register('yieldmo', yieldmo);
 register('_ping_', function(win, data) {
   win.document.getElementById('c').textContent = data.ping;
@@ -92,6 +94,23 @@ const defaultAllowedTypesInCustomFrame = [
   'twitter',
   'doubleclick',
   '_ping_',
+  'a9',
+  'adform',
+  'adreactor',
+  'adsense',
+  'adtech',
+  'plista',
+  'doubleclick',
+  'flite',
+  'taboola',
+  'dotandads',
+  'nativo',
+  'yieldmo',
+  'smartadserver',
+  'revcontent',
+  'openadstream',
+  'triplelift',
+  'teads'
 ];
 
 /**

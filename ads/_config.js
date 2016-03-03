@@ -31,6 +31,7 @@ export const adPrefetch = {
   dotandads: 'https://amp.ad.dotandad.com/dotandadsAmp.js',
   mediaimpact: 'https://ec-ns.sascdn.com/diff/251/divscripte/amp.js',
   smartadserver: 'https://ec-ns.sascdn.com/diff/js/smart.js',
+  nativo: 'https://s.ntv.io/serve/load.js',
   yieldmo: 'https://static.yieldmo.com/ym.amp1.js',
   revcontent: 'https://labs-cdn.revcontent.com/build/amphtml/revcontent.amp.min.js',
   teads: 'https://cdn.teads.tv/media/format/v3/teads-format.min.js',
@@ -64,6 +65,9 @@ export const adPreconnect = {
     'https://tpc.googlesyndication.com',
   ],
   dotandads: 'https://bal.ad.dotandad.com',
+  nativo: [
+    'https://ntvimg-a.akamaihd.net'
+  ],
   yieldmo: [
     'https://static.yieldmo.com',
     'https://s.yieldmo.com',
