@@ -23,7 +23,7 @@ import {writeScript, checkData} from '../src/3p';
 export function nativo(global, data) {
   var loc = window.context.location;
   global.NTV = {
-  	url: loc.href,
+    url: loc.href,
     param: data.params
   };
   const js = loc.protocol + '//s.ntv.io/serve/load.js';
